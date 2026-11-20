@@ -9,7 +9,7 @@ interface BoardProps {
 
 export function Board(props: BoardProps) {
   return (
-    <div className="grid grid-cols-3 gap-3">
+    <div className="grid grid-cols-3 gap-4">
       {props.board.map((cell, index) => {
         const isWinningCombination =
           props.winningCondition?.includes(index) ?? false;

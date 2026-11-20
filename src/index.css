@@ -10,8 +10,7 @@
   --color-player-x: #60a5fa;
   --color-player-o: #f59e0b;
 
-  --color-accent: #a78bfa;
-  --color-success: #bef264;
+  --color-accent: #bef264;
 }
 
 @layer base {
