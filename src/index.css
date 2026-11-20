@@ -2,13 +2,38 @@
 
 @theme {
   --font-sans: "Nunito", sans-serif;
+
+  --color-background: #211936;
+  --color-surface: #30234b;
+  --color-cell: #40305f;
+
+  --color-player-x: #60a5fa;
+  --color-player-o: #f59e0b;
+
+  --color-accent: #a78bfa;
+  --color-success: #bef264;
 }
 
-html {
-  font-family: var(--font-sans);
-}
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
 
-body {
-  min-width: 320px;
-  min-height: 100vh;
+  html {
+    font-family: var(--font-sans);
+    background-color: var(--color-background);
+  }
+
+  body {
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    color: #f4f0ff;
+    background-color: var(--color-background);
+  }
+
+  button {
+    font: inherit;
+    cursor: pointer;
+  }
 }

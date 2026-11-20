@@ -7,5 +7,12 @@ interface CellProps {
 }
 
 export function Cell(props: CellProps) {
-  return <button onClick={props.onClick}>{props.value}</button>;
+  return (
+    <button
+      onClick={props.onClick}
+      className="h-24 w-24 bg-white border rounded-xl text-3xl font-bold flex items-center justify-center"
+    >
+      {props.value}
+    </button>
+  );
 }
